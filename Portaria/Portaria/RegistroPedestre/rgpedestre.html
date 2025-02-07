@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Registro de Externo</title>
+</head>
+<body>
+    <header>
+    <a href="/Inicio/inicio.html"><img id="logo-img" src="/Imagens/logo.png" alt="logo"></a>
+    </header>
+    <main>
+        <div class="home" id="home">
+            <form action="">
+                <label class="identificador-texto" id="label-nome">Nome:</label>
+                <input type="text" class="identificador-input" id="input-nome">
+                <label class="identificador-texto" id="label-rg">RG:</label>
+                <input type="text" class="identificador-input" id="input-rg" maxlength="8">
+                <label class="identificador-texto" id="label-destino">Destino:</label>
+                <select name="destino" class="identificador-input" id="input-destino">
+                    <option value=""></option>
+                    <option value="oficina">Oficina</option>
+                    <option value="compras">Compras</option>
+                    <option value="financeiros">Financeiro</option>
+                    <option value="rhdp">RH/DP</option>
+                    <option value="reunião">Reunião</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <label class="identificador-texto" id="label-data">Data:</label>
+                <input type="datetime-local" class="identificador-input" id="input-data">
+                <button type="submit" id="botao-avancar" onclick="window.location='/Inicio/inicio.html'">➤</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
